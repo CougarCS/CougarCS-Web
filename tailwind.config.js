@@ -17,7 +17,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "on-background": "#2f2838",
+        "on-hover": "rgb(152, 112, 122)",
+      }
+    },
   },
   plugins: [],
 }
