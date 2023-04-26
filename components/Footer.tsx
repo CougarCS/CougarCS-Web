@@ -1,23 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "../assets/logo.png";
-
-import fb from "../assets/icons/facebook-f.webp";
-import ig from "../assets/icons/instagram.webp";
-import ds from "../assets/icons/discord.webp";
-import li from "../assets/icons/linkedin.webp";
-import yt from "../assets/icons/youtube.webp";
-import gh from "../assets/icons/github.webp";
-import tw from "../assets/icons/twitter.webp";
-
 const Footer = () => {
   return (
     <footer className="text-center pt-[45px] pb-[60px] mt-[50px] bg-[#f6f6f6]">
       <div className="max-w-[500px] mx-auto my-0">
         <Link href="/">
           <Image
-            src={logo}
+            src="/images/logo.png"
+            width={180}
+            height={84.08}
             className="max-w-[180px] h-auto inline-block mb-[30px]"
             alt="CougarCS - Computer Science Organization in University of Houston"
           />
@@ -29,7 +21,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={fb} alt="Facebook Icon" />
+              <Image 
+                src="/icons/facebook.webp" 
+                width={15}
+                height={28} 
+                alt="Facebook Icon" 
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -38,7 +35,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={li} alt="Linkedin Icon" />
+              <Image 
+                src="/icons/linkedin.webp" 
+                width={26}
+                height={26}
+                alt="Linkedin Icon" 
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -47,7 +49,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={ig} alt="Instagram Icon" />
+              <Image 
+                src="/icons/instagram.webp" 
+                width={28}
+                height={27}
+                alt="Instagram Icon" 
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -56,7 +63,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={ds} alt="Discord Icon" />
+              <Image 
+                src="/icons/discord.webp" 
+                width={25}
+                height={29}
+                alt="Discord Icon" 
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -65,7 +77,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={yt} alt="Youtube Icon" />
+              <Image 
+                src="/icons/youtube.webp" 
+                width={29}
+                height={26}
+                alt="Youtube Icon"
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -74,7 +91,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={gh} alt="GitHub Icon" />
+              <Image 
+                src="/icons/github.webp" 
+                width={24}
+                height={24}
+                alt="GitHub Icon"
+              />
             </Link>
           </div>
           <div className="py-[0.5rem] px-[1rem]">
@@ -83,7 +105,12 @@ const Footer = () => {
               target="_blank"
               rel="nofollow noopener"
             >
-              <Image src={tw} alt="Twitter Icon" />
+              <Image 
+                src="/icons/twitter.webp" 
+                width={28}
+                height={26}
+                alt="Twitter Icon" 
+              />
             </Link>
           </div>
         </nav>
