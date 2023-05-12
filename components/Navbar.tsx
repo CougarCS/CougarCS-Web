@@ -1,143 +1,79 @@
 import Link from "next/link";
 import Image from "next/image";
 
-/*
-.App-logo {
-	margin-left: 1em;
-	width: 175px;
-}
+const NavBar = () => {
+  return (
+    <nav className="w-full flex items-center justify-between p-4 lg:flex-row lg:p-6 border-b border-[1em]">
+      <Link href="/">
+        <div className="ml-4 w-44">
+          <Image src="/images/logo.png" alt="logo" />
+        </div>
+      </Link>
 
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-	color: var(--color-on-background);
-}
+      <button
+        type="button"
+        aria-controls="responsive-navbar-nav"
+        className="text-on-background focus:outline-none"
+      >
+        <i className="fas fa-bars fa-lg"></i>
+      </button>
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link:hover {
-	color: var(--color-on-hover);
-}
-
-.main-nav {
-	border-bottom: 1em;
-}
-
-.main-nav .navbar-nav .nav-link {
-	padding-left: 0.65rem;
-	padding-right: 0.65rem;
-}
-
-.main-nav .navbar-nav .nav-link.active {
-	color: var(--color-on-labelAndHeaders);
-	font-weight: 600;
-}
-
-.fa-bars:before {
-	color: var(--color-on-background) !important;
-}
-
-.navbar-toggler {
-	padding: 0.5rem;
-	border: none !important;
-}
-
-button.navbar-toggler:focus {
-	outline: none;
-}
-
-.main-nav .fas.fa-external-link-alt {
-	margin-left: 0.4rem;
-}
-
-.main-nav .button {
-	background-color: var(--color-on-labelAndHeaders);
-	border: none;
-	border-radius: 7px;
-	padding: 13px 33px;
-	font-weight: 600;
-	outline: none;
-}
-
-.main-nav .button:hover {
-	background-color: #f04248;
-}
-
-.main-nav .navbar-nav {
-	align-items: center;
-}
- */
-
-const NavBar = () => (
-  <nav className="flex items-center justify-between border-b border-[1em] p-4 lg:flex-row lg:p-6">
-    <Link href="/" className="flex items-center">
-      <Image src="/images/logo.png" alt="logo" className="w-44 mr-6" />
-    </Link>
-    <button type="button" className="block lg:hidden focus:outline-none">
-      <i className="fas fa-bars fa-lg"></i>
-    </button>
-    <div className="hidden lg:flex lg:justify-end lg:flex-1">
-      <ul className="flex items-center space-x-6 text-lg font-medium">
-        <li>
-          <Link href="/about" className="text-gray-900 hover:text-red-500">
-            About
+      <div className="justify-end" id="responsive-navbar-nav">
+        <nav>
+          <Link href="/about">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              About
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/calendar" className="text-gray-900 hover:text-red-500">
-            Events
+          <Link href="/calendar">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Events
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/gallery" className="text-gray-900 hover:text-red-500">
-            Gallery
+          <Link href="/gallery">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Gallery
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/tutoring" className="text-gray-900 hover:text-red-500">
-            Tutoring
+          <Link href="/tutoring">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Tutoring
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/membership" className="text-gray-900 hover:text-red-500">
-            Membership
+          <Link href="/membership">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Membership
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/hackathons" className="text-gray-900 hover:text-red-500">
-            Hackathons
+          <Link href="/hackathons">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Hackathons
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link href="/contactus" className="text-gray-900 hover:text-red-500">
-            Contact Us
+          <Link href="/contactus">
+            <a className="nav-link px-2 text-on-background hover:text-on-hover">
+              Contact Us
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link
+          <a
             href="https://uhcode.red/"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-900 hover:text-red-500"
+            className="nav-link px-2 text-on-background hover:text-on-hover inline-flex items-center"
           >
-            CodeRED <i className="fas fa-external-link-alt"></i>
+            CodeRED <i className="fas fa-external-link-alt ml-1"></i>
+          </a>
+          <Link href="/register">
+            <a>
+              <button className="nav-link button bg-on-labelAndHeaders text-white font-semibold py-3 px-8 rounded-lg hover:bg-red-600 focus:outline-none">
+                Register
+              </button>
+            </a>
           </Link>
-        </li>
-        <li>
-          <Link
-            href="/register"
-            className="inline-flex items-center justify-center px-6 py-2 text-lg font-medium text-white bg-red-500 border border-transparent rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-          >
-            Register
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+        </nav>
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
