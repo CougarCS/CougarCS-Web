@@ -1,5 +1,5 @@
 # CougarCS-Web
 
-## scripts
+# Scripts
 
-# npm run dev
+*  `npm run dev`
