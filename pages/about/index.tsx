@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -7,14 +7,11 @@ export default function Home() {
       <nav className="flex-1">
         <ul>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/">Home</Link>
           </li>
         </ul>
       </nav>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <Footer/>
+      <h1 className="text-3xl font-bold underline">About page</h1>
     </div>
-  )
+  );
 }
