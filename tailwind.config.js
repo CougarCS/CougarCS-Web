@@ -21,7 +21,16 @@ module.exports = {
       colors: {
         "on-background": "#2f2838",
         "on-hover": "rgb(152, 112, 122)",
-      }
+      },
+      keyframes: {
+        spiner: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        "loading-spiner": "spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+      },
     },
   },
   plugins: [],
