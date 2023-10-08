@@ -2,7 +2,7 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="flex flex-col h-screen">
       <NavBar />
