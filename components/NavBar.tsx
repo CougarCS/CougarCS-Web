@@ -32,13 +32,13 @@ const NavBar = () => {
             <Link href="/branches">Branches</Link>
           </li>
           <li>
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contactus">Contact Us</Link>
           </li>
           <li>
-            <Link href="/code-red">CodeRED</Link>
+            <Link href="/codered">CodeRED</Link>
           </li>
             <li className="">
-                <Link className="bg-red-700 text-white px-4 py-2" href="/register">Register</Link>
+                <Link className="bg-red-700 text-white px-4 py-2" href="/join">Register</Link>
             </li>
         </ul>
       </nav>
