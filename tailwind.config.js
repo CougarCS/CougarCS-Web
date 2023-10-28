@@ -32,6 +32,9 @@ module.exports = {
         "loading-spiner": "spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
       },
     },
+    fontFamily: {
+      body: ['"Chakra Petch"'], // <= This works
+    },
   },
   plugins: [],
 }
