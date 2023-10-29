@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         "on-background": "#2f2838",
         "on-hover": "rgb(152, 112, 122)",
+        "on-labelAndHeaders": "#ec1c24",
       },
       keyframes: {
         spiner: {
