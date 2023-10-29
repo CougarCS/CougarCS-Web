@@ -116,7 +116,7 @@ const Footer = () => {
         </nav>
         <nav className="p-0 justify-center text-on-background">
           <Link
-            href="/privacy"
+            href="/privacy-policy"
             className="hover:text-on-hover active:text-on-hover"
           >
             Privacy Policy
