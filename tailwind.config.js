@@ -5,19 +5,22 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         "on-background": "#2f2838",
         "on-hover": "rgb(152, 112, 122)",
@@ -35,4 +38,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
