@@ -2,7 +2,7 @@ import ContactForm from "../../components/ContactForm";
 
 export default function ContactUs() {
     return (
-        <div className="flex justify-center h-screen">
+        <div className="flex justify-center">
             <ContactForm/>
         </div>
     );
